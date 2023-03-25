@@ -41,7 +41,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 20em 20em 20em;
+    grid-template-columns: 18.5em 18.5em 18.5em;
 }
 
 h1 {
@@ -59,12 +59,12 @@ p {
     color: var(--transperent-white);
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     line-height: 1.5rem;
 }
 
 section {
-    padding: 2rem;
+    padding: 2rem 3rem 2rem 2rem;
 }
 
 .first {
@@ -100,6 +100,7 @@ button {
     background-color: var(--very-light-gray);
     cursor: pointer;
     box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
 button:hover {
