@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transperent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* ## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: 
+Very dark cyan: 
+
+### Neutral
+
+Transparent white (paragraphs): 
+Very light gray (background, headings, buttons):  
+
+font-family: 'Big Shoulders Display', cursive;
+
+
+*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--very-light-gray);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20em 20em 20em;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--very-light-gray);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 15px;
+    color: var(--transperent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-bottom: 6rem;
+    line-height: 1.5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.first {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.first button {
+    color: var(--bright-orange);
+}
+.second {
+    background-color: var(--dark-cyan);
+}
+.second button {
+    color: var(--dark-cyan);
+}
+.third {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.third button {
+    color: var(--very-dark-cyan);
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    padding: .8rem 2.6rem;
+    border-radius: 2rem;
+    background-color: var(--very-light-gray);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+@media only screen and (max-device-width: 812px) { 
+
+    body {
+        height: auto;
+        padding: 1rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .first {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+    .third {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    section {
+        padding: 2rem 3rem 2rem 2rem;
+    }
+    p {
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+    }
+    
+}
