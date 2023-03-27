@@ -91,6 +91,7 @@ section {
 }
 
 button {
+    box-sizing: border-box;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -99,7 +100,7 @@ button {
     border-radius: 2rem;
     background-color: var(--very-light-gray);
     cursor: pointer;
-    box-sizing: border-box;
+
     margin-bottom: 1rem;
 }
 
